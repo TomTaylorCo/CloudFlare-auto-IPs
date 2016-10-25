@@ -4,7 +4,7 @@
 # Date: 24/10/2016
 # Version 0.2
 # Updated so it runs on linux via cmd
-# wget -q https://raw.githubusercontent.com/TomTaylorCo/CloudFlare-auto-IPs/master/cf.sh -0 cf.sh && chmod +x cf.sh && ./cf.sh
+# wget -q https://raw.githubusercontent.com/TomTaylorCo/CloudFlare-auto-IPs/master/cf.sh -O cf.sh && chmod +x cf.sh && ./cf.sh
 TYPE="allow"
 CRON="/etc/cron.d/cf.cron"
 LOCATION="/usr/local/cf"
