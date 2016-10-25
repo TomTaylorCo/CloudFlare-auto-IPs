@@ -1,7 +1,10 @@
 #!/bin/bash
-# Author: @HKirste
-# Date: 18/03/2013
-# Version 0.1
+# Author: @t0mtaylor, @HKirste
+# Spawn: https://gist.github.com/t0mtaylor/d36d482be8284fb4cc4866eb05d53d97
+# Date: 24/10/2016
+# Version 0.2
+# Updated so it runs on linux via cmd
+# wget -q https://raw.githubusercontent.com/TomTaylorCo/CloudFlare-auto-IPs/master/cf.sh -0 cf.sh && chmod +x cf.sh && ./cf.sh
 TYPE="allow"
 CRON="/etc/cron.d/cf.cron"
 LOCATION="/usr/local/cf"
@@ -72,7 +75,7 @@ if [ ! -f $LOCATION ]; then
 	install
 fi
 
-for line in `curl --silent https://www.cloudflare.com/ips-v4`;do
+for line in `curl --silent -L https://www.cloudflare.com/ips-v4`;do
 
 if [ "$TYPE" == "allow" -o "$TYPE" == "ALLOW" ]; then
 	if [ CSF ]; then
