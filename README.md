@@ -10,7 +10,7 @@ Runs each day checking for new CF IPs to add
 How to install - one line copy, paste, execute (CPe):
 
 ```
-wget -q https://raw.githubusercontent.com/TomTaylorCo/CloudFlare-auto-IPs/master/cf.sh -0 cf.sh && chmod +x cf.sh && ./cf.sh
+wget -q https://raw.githubusercontent.com/TomTaylorCo/CloudFlare-auto-IPs/master/cf.sh -O cf.sh && chmod +x cf.sh && ./cf.sh
 ```
 
 This will setup the script in your server for to run each day checking for new IPs to add.
